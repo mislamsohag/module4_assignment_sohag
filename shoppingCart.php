@@ -10,21 +10,14 @@ class Product{
         $this->price=$price;       
     }
 
-    public function getId() {
-        return $this->id;
-    }
-
-    public function getName() {
-        return $this->name;
-    }
-
-    public function getPrice() {
-        return number_format((float)$this->price,2,'.','');
+    public function getFormattedPrice() {
+       return number_format((float)$this->price,2);
+         
     }
 
 
     public function showDetails() {
-        return "Product Details: \n" . "ID: $this->id \n" . "Name: $this->name \n". "Price: $".$this->price; 
+        return "Product Details: \n" . "ID: $this->id \n" . "Name: $this->name \n". "Price: $".$this->getFormattedPrice(); 
     }
 }
 
