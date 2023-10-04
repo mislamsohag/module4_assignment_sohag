@@ -32,7 +32,4 @@ class Product {
 
 // Usage example:
 $product1 = new Product(1, "Example Product 1", 19.99);
-// $product2 = new Product(2, "Example Product 2", 29.99);
-
 echo $product1 . "\n";
-// echo $product2 . "\n";
